@@ -23,9 +23,16 @@ body {
 
 /* Cabeçalho */
 .site-header {
-  background: #0b4f6c; /* azul escuro */
+  position: fixed;   /* fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(11,79,108,0.9); /* azul com leve transparência */
   color: #fff;
+  z-index: 1000;     /* garante que fique acima do conteúdo */
 }
+
+
 /* Navegação */
 .nav {
   max-width: 1100px;
@@ -190,15 +197,30 @@ a:visited {
 }
 
 /* Rodapé */
-footer {
+ /* footer {
+  position: fixed;
   margin-top: 24px;
   background: #0b4f6c;
   color: #dbeafe;
   text-align: center;
   padding: 18px;
 }
-footer a { color: #dbeafe; 
+ footer a { color: #dbeafe; 
+} */
+ footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0b4f6c;
+  color: #dbeafe;
+  text-align: center;
+  padding: 18px;
+  z-index: 100;
 }
+footer a { color: #dbeafe; } 
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     header h1 {
@@ -230,3 +252,54 @@ footer a { color: #dbeafe;
         grid-template-columns: 1fr;
     }
 }
+/* ====== Área Oeste ====== */
+
+.card-turismo {
+  max-width: 600px; /* largura máxima */
+  margin: 30px auto; /* centralizado */
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card-turismo:hover {
+  transform: scale(1.02);
+}
+
+.card-turismo img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover; /* mantém proporção */
+}
+
+.card-turismo .texto {
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+.card-turismo h2 {
+  margin-bottom: 10px;
+  color: #0c1e45;
+}
+
+.card-turismo p {
+  color: #333;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.turismo {
+  padding: 40px 20px;
+  background: #f4f7fa;
+}
+
+.site-header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* ====== Fim Área Oeste ====== */
