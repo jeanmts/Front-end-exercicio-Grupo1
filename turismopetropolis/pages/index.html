@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Petrópolis Turismo — Home</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <!-- Navegação principal -->
-    <header class="site-header">
-      <nav class="nav">
-        <a class="brand" href="index.html">Petrópolis Turismo</a>
-        <ul class="menu">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="guias.html">Guias</a></li>
-          <li><a href="leste.html">Área Leste</a></li>
-          <li><a href="oeste.html">Área Oeste</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Petrópolis Turismo — Home</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <!-- Cabeçalho / Navegação -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Petrópolis Turismo</a>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="guias.html">Guias</a></li>
+        <li><a href="leste.html">Área Leste</a></li>
+        <li><a href="oeste.html">Área Oeste</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Hero: imagem com overlay; título/subtítulo aparecem no hover -->
-    <main>
-      <section class="hero" aria-label="Imagem destaque de Petrópolis">
-        <div
-          class="hero__image"
-          role="img"
-          aria-label="Centro histórico de Petrópolis"
-        ></div>
-
-        <!-- Texto escondido até o hover -->
-        <div class="hero__overlay">
-          <h1 class="hero__title">Descubra Petrópolis</h1>
-          <p class="hero__subtitle">
-            História, gastronomia e natureza em um só lugar
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero">
+      <figure>
+        <img src="../img/banner1.jpeg" alt="Vista panorâmica de Petrópolis" />
+        <figcaption class="hero-content">
+          <h1>Descubra Petrópolis</h1>
+          <p>Cidade Imperial</p>
+          <p>
+            Conheça a história viva da Cidade Imperial, onde a natureza se une à 
+            arquitetura charmosa. Explore museus, palácios e trilhas encantadoras. 
+            Petrópolis espera por você com cultura, gastronomia e aventura.
           </p>
-        </div>
-      </section>
-    </main>
+        </figcaption>
+      </figure>
+    </section>
 
- guia
+    <!-- Destaques -->
+    <section class="destaques">
+      <h2>Destaques Turísticos</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="../img/museu-imperial.jpeg" alt="Museu Imperial" />
+          <h3>Museu Imperial</h3>
+          <p>A antiga residência de verão de D. Pedro II.</p>
+          <a href="leste.html" class="btn">Saiba mais</a>
+        </article>
+
+        <article class="card">
+          <img src="../img/palacio-cristal.jpg" alt="Palácio de Cristal" />
+          <h3>Palácio de Cristal</h3>
+          <p>Palco de eventos culturais e feiras em Petrópolis.</p>
+          <a href="leste.html" class="btn">Saiba mais</a>
+        </article>
+
+        <article class="card">
+          <img src="../img/serra-orgaos.jpg" alt="Parque Nacional da Serra dos Órgãos" />
+          <h3>Parque Nacional da Serra dos Órgãos</h3>
+          <p>Trilhas, montanhismo e paisagens incríveis.</p>
+          <a href="oeste.html" class="btn">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
   <!-- Rodapé -->
   <footer class="site-footer">
     <p>© 2025 Prefeitura de Petrópolis — Secretaria de Turismo</p>
@@ -50,17 +75,4 @@
     </p>
   </footer>
 </body>
-</html>s
-
-    <!-- Rodapé -->
-    <footer class="site-footer">
-      <p>© 2025 Prefeitura de Petrópolis — Secretaria de Turismo</p>
-      <p>
-        <a href="#" aria-label="Instagram">Instagram</a> ·
-        <a href="#" aria-label="Facebook">Facebook</a> ·
-        <a href="#" aria-label="Contato">Contato</a>
-      </p>
-    </footer>
-  </body>
 </html>
- main
