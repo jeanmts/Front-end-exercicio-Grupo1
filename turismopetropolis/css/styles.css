@@ -1,0 +1,135 @@
+/* ====== Reset/Base ====== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #0f172a; /* Slate-900 */
+  background: #f8fafc; /* Slate-50 */
+  line-height: 1.5;
+}
+
+/* ====== Cabeçalho/Navegação ====== */
+.site-header {
+  background: #0b4f6c; /* azul escuro */
+  color: #fff;
+}
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* flexbox */
+}
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.menu {
+  display: flex; /* flexbox */
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu a {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.menu a:hover,
+.menu a.active {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+/* ====== Home: Hero com hover ====== */
+.hero {
+  position: relative;
+  height: clamp(320px, 55vh, 560px);
+  overflow: hidden;
+}
+.hero__image {
+  position: absolute;
+  inset: 0;
+  background: url('../img/hero-home.jpg') center/cover no-repeat;
+  transform: scale(1);
+  transition: transform .6s ease;
+}
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center; /* centraliza conteúdo */
+  background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.5));
+  opacity: 0;           /* escondido até hover */
+  transition: opacity .4s ease;
+  text-align: center;
+  color: #fff;
+  padding: 0 16px;
+}
+.hero__title {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  margin: 0 0 .3rem;
+}
+.hero__subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin: 0;
+  color: #e2e8f0;
+}
+/* Efeito no hover da seção */
+.hero:hover .hero__overlay { opacity: 1; }
+.hero:hover .hero__image   { transform: scale(1.05); }
+
+/* ====== Conteúdo padrão ====== */
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.lead { color: #475569; }
+
+/* ====== Grid de cards (flexbox) ====== */
+.card-grid {
+  display: flex;              /* flexbox */
+  flex-wrap: wrap;            /* quebra linha */
+  gap: 16px;
+  margin-top: 16px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1 1 280px;            /* base 280px, cresce/reduz conforme espaço */
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.08);
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card__body {
+  padding: 12px 14px 16px;
+}
+.card__body h2 {
+  margin: 4px 0 6px;
+  font-size: 1.1rem;
+}
+
+/* ====== Rodapé ====== */
+.site-footer {
+  margin-top: 24px;
+  background: #0b4f6c;
+  color: #dbeafe;
+  text-align: center;
+  padding: 18px;
+}
+.site-footer a { color: #dbeafe; }
