@@ -147,7 +147,6 @@ main {
 
 /* ====== Rodapé ====== */
 .site-footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -176,8 +175,7 @@ main {
   background: #093a4e;   /* tom mais escuro no hover */
   transform: translateY(-2px);
 }
-=======
-}
+
 .btn:hover {
   background: #093a4e;   /* tom mais escuro no hover */
   transform: translateY(-2px);

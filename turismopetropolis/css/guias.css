@@ -208,7 +208,6 @@ a:visited {
  footer a { color: #dbeafe; 
 } */
  footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -301,5 +300,6 @@ footer a { color: #dbeafe; }
   position: relative;
   z-index: 1000;
 }
+
 
 /* ====== Fim Área Oeste ====== */
