@@ -170,8 +170,16 @@ main {
   border-radius: 6px;
   font-weight: 500;
   transition: background 0.3s ease, transform 0.2s ease;
+
 }
 .btn:hover {
   background: #093a4e;   /* tom mais escuro no hover */
   transform: translateY(-2px);
 }
+=======
+}
+.btn:hover {
+  background: #093a4e;   /* tom mais escuro no hover */
+  transform: translateY(-2px);
+}
+
