@@ -26,3 +26,7 @@
 .text-card {
     font-size: 20px;
 }
+.site-header {
+  position: relative;
+  z-index: 1000;
+}
